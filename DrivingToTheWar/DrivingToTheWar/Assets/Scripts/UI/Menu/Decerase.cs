@@ -17,6 +17,5 @@ public class Decerase : MonoBehaviour {
 	private void OnMouseDown()
 	{
 		AudioManager.isDecrease = true;
-		print(22);
 	}
 }

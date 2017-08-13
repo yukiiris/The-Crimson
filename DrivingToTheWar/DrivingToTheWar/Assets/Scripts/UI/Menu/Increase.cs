@@ -16,6 +16,5 @@ public class Increase : MonoBehaviour {
 	private void OnMouseDown()
 	{
 		AudioManager.isIncrease = true;
-		print(11);
 	}
 }

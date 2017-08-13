@@ -6,14 +6,20 @@ public class OnMouseTouch : MonoBehaviour {
 
 	public bool ifMouseOver = false;
 	public bool ifMouseLeave = false;
+	public bool isOn = false;
 
-	void OnMouseEnter () {
-		ifMouseOver = true;
-		ifMouseLeave = false;
+	private void OnMouseDown()
+	{
+		if (!isOn)
+		{
+			ifMouseOver = true;
+			isOn = true;
+		}
+		else
+		{
+			ifMouseLeave = true;
+			isOn = false;
+		}
 	}
 
-	void OnMouseExit () {
-		ifMouseLeave = true;
-		ifMouseOver = false;
-	}
 }

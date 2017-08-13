@@ -10,52 +10,60 @@ public class Dialog : MonoBehaviour {
 	public  Text text;
 	public float width;
 	public bool isShow = true;
+	public int wordCount = 30;
 	// Use this for initialization
 
 	private void Awake()
 	{
-		width = dialogs[0].GetComponent<RectTransform>().sizeDelta.x;
-		print(width);
+		ajust();
+		width = dialogs[1].GetComponent<RectTransform>().sizeDelta.x;
 	}
 
 	void Start () {
-		//StartCoroutine(showDialog(new Vector3(10, 0, 0), "，我叫克里斯托你好，我叫克里斯托你好，我叫克里斯托你好，我叫克里斯托你好，我叫克里斯托你好，我叫克里斯托你好，我叫克里斯托你好，我叫克里斯托你好，我叫克里斯托", 2.2f));
-		//StartCoroutine(showDialog(new Vector3(10, 0, 0), "你好，我叫克里斯托", 2.2f));
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (isShow)
 		{
-			StartCoroutine(showDialog(new Vector3(10, 0, 0), "叫克里斯托你好，我叫克里斯托你好，我叫克里斯托你好，我叫克里斯托你好，我叫克里斯托你好，我叫克里斯托你好，我叫克里斯托你好，我叫克里斯托", 2.2f));
+			StartCoroutine(showDialog(new Vector3(15, 0, 0), "叫克里斯托你好，我叫克里斯托你好，我叫克里斯托你好，我叫克里斯托你好，我叫克里斯托你好，我叫克里斯托你好，我叫克里斯托你好，我叫克里斯托", 10f));
 			isShow = false;
 		}
 	}
 
 	public void ajust()
 	{
-		foreach (GameObject d in GameObject.FindGameObjectsWithTag("dialog"))
+		foreach (GameObject d in dialogs)
 		{
-			
+			d.GetComponent<RectTransform>().sizeDelta = new Vector2(wordCount * 14 + 36, 35);
 		}
+		text.rectTransform.sizeDelta = new Vector2(wordCount * 14, 177);
 	}
 
 
 
 	public IEnumerator showDialog(Vector3 position, string words, float time)
 	{
-		int i = words.Length / 16 + 1;
+		int i = words.Length / wordCount + 1;
 		text.text = words;
 		dialog.GetComponent<RectTransform>().anchoredPosition3D = position;
 		dialogs[0].GetComponent<RectTransform>().anchoredPosition3D =
 			new Vector3(dialogs[0].GetComponent<RectTransform>().anchoredPosition3D.x, dialogs[0].GetComponent<RectTransform>().anchoredPosition3D.y + 20, dialogs[0].GetComponent<RectTransform>().anchoredPosition3D.z);
-		Debug.Log(words);
+
 		for (int j = 0; j <= i; j++)
 		{
 			dialogs[j].SetActive(true);
 		}
 		dialogs[i].SetActive(true);
-		dialogs[i].GetComponent<RectTransform>().sizeDelta = new Vector2((words.Length % 16) *14 + 36, 35);
+		dialogs[i].GetComponent<RectTransform>().sizeDelta = new Vector2((words.Length % wordCount) *14 + 36, 35);
+
+
+		Vector3 v = dialogs[i].GetComponent<RectTransform>().anchoredPosition3D;
+		print(dialogs[i].GetComponent<RectTransform>().anchoredPosition3D.x);
+		dialogs[i].GetComponent<RectTransform>().anchoredPosition3D = new Vector3(v.x - (width - dialogs[i].GetComponent<RectTransform>().sizeDelta.x) / 2, v.y, v.z);
+		print(dialogs[i].GetComponent<RectTransform>().anchoredPosition3D.x);
+		
 
 		yield return new WaitForSeconds(time);
 		for (int j = 0; j <= i; j++)

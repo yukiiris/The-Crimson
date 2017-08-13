@@ -9,7 +9,6 @@ public class ArchiveManager : MonoBehaviour {
 
 	private void Awake()
 	{
-		print(11);
 		save();
 	}
 	// Use this for initialization

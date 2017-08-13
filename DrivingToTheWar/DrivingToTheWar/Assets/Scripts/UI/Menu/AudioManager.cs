@@ -9,6 +9,8 @@ public class AudioManager : MonoBehaviour
 	public static bool isDecrease = false;
 	public static bool isIncrease = false;
 	public static float rollOff = 0.05f;
+	public GameObject manager;
+	public static bool[] status;
 	public static AudioSource[] sources;
 
 	private float delta = 0.25f;
@@ -16,6 +18,19 @@ public class AudioManager : MonoBehaviour
 	private void Awake()
 	{
 		sources = GetComponents<AudioSource>();
+		status = new bool[sources.Length];
+
+		for (int i = 0; i < sources.Length; i++)
+		{
+			if (sources[i].volume != 0)
+			{
+				status[i] = true;
+			}
+			else
+			{
+				status[i] = false;
+			}
+		}
 	}
 
 	// Use this for initialization
@@ -64,11 +79,11 @@ public class AudioManager : MonoBehaviour
 
 	public void increase()
 	{
-		foreach (AudioSource au in sources)
+		for (int i = 0; i < sources.Length; i++)
 		{
-			if (au.volume != 0 && au.volume != 1)
+			if (status[i])
 			{
-				au.volume += delta;
+				sources[i].volume += delta;
 			}
 		}
 	}
