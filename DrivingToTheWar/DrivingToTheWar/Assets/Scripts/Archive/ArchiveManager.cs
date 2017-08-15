@@ -7,15 +7,19 @@ using UnityEngine;
 
 public class ArchiveManager : MonoBehaviour {
 
-	public static string path;
+	public   string path = "save.txt";
+	public   int time = 0;
+	public   int scene = 0;
+	public   Transform item;
+
 
 	private void Awake()
 	{
-		save();
+		item = GameObject.Find("GameObject").transform;
 	}
 	// Use this for initialization
 	void Start () {
-
+		save();
 	}
 	
 	// Update is called once per frame
@@ -23,7 +27,7 @@ public class ArchiveManager : MonoBehaviour {
 		
 	}
 
-	public static void load()
+	public void load()
 	{
 		byte[] byData = new byte[1024];
 		char[] charData = new char[1024];
@@ -46,15 +50,26 @@ public class ArchiveManager : MonoBehaviour {
 		print(myStr);
 	}
 
-	public static void save()
+	public   char[] buildFile()
+	{
+		string file = null;
+		file += time.ToString() + ",";
+		file += scene.ToString() + ",";
+		foreach (Transform g in item)
+		{
+			file += g.name + ",";
+		}
+		return file.ToCharArray();
+	}
+
+	public  void save()
 	{
 		byte[] byData;
-		char[] charData;
+		char[] charData = buildFile();
 
 		try
 		{
 			FileStream aFile = new FileStream(path, FileMode.Create);
-			charData = "My pink half of the drainpipe.".ToCharArray();
 			byData = new byte[charData.Length];
 			Encoder e = Encoding.UTF8.GetEncoder();
 			e.GetBytes(charData, 0, charData.Length, byData, 0, true);
