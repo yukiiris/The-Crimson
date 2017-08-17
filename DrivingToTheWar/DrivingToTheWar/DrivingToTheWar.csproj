@@ -118,6 +118,11 @@
     <Compile Include="Assets\Scripts\DragonBones\unity\UnitySlot.cs" />
     <Compile Include="Assets\Scripts\DragonBones\unity\UnityTextureData.cs" />
     <Compile Include="Assets\Scripts\DragonBones\unity\UnityUGUIDisplay.cs" />
+    <Compile Include="Assets\Scripts\StartMenu\ContinueButton.cs" />
+    <Compile Include="Assets\Scripts\StartMenu\Fade.cs" />
+    <Compile Include="Assets\Scripts\StartMenu\SceneChanger.cs" />
+    <Compile Include="Assets\Scripts\StartMenu\SettingsButton.cs" />
+    <Compile Include="Assets\Scripts\StartMenu\StartButton.cs" />
     <Compile Include="Assets\Scripts\UI\Dialog Box\Dialog.cs" />
     <Compile Include="Assets\Scripts\UI\Menu\AudioManager.cs" />
     <Compile Include="Assets\Scripts\UI\Menu\Decerase.cs" />

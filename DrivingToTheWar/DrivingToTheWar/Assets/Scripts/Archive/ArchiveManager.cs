@@ -7,10 +7,10 @@ using UnityEngine;
 
 public class ArchiveManager : MonoBehaviour {
 
-	public   string path = "save.txt";
-	public   int time = 0;
-	public   int scene = 0;
-	public   Transform item;
+	public static string path = "save.txt";
+	public static int time = 0;
+	public static int scene = 0;
+	public static Transform item;
 
 
 	private void Awake()
@@ -27,10 +27,9 @@ public class ArchiveManager : MonoBehaviour {
 		
 	}
 
-	public void load()
+	public static void load()
 	{
 		byte[] byData = new byte[1024];
-		char[] charData = new char[1024];
 
 		try
 		{
@@ -44,13 +43,11 @@ public class ArchiveManager : MonoBehaviour {
 
 			return;
 		}
-
-		Decoder d = Encoding.UTF8.GetDecoder();
 		string myStr = System.Text.Encoding.UTF8.GetString(byData);
 		print(myStr);
 	}
 
-	public   char[] buildFile()
+	public static char[] buildFile()
 	{
 		string file = null;
 		file += time.ToString() + ",";
@@ -62,7 +59,7 @@ public class ArchiveManager : MonoBehaviour {
 		return file.ToCharArray();
 	}
 
-	public  void save()
+	public static void save()
 	{
 		byte[] byData;
 		char[] charData = buildFile();
