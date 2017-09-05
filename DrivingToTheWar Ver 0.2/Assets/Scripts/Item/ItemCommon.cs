@@ -59,10 +59,10 @@ public class ItemCommon : Statem {
 				statem.GetComponent<ItemCommon> ().myX = statem.gameObject.transform.position.x ;
 				statem.GetComponent<ItemCommon> ().myY = statem.gameObject.transform.position.y ;
 			}
-			if (statem.GetComponent<ItemCommon> ().ifClick == false && statem.GetComponent<ItemCommon> ().ifUse == false && (statem.gameObject.transform.position.x < 6.5f || statem.gameObject.transform.position.y > 5.3f || statem.gameObject.transform.position.y < -1.3f || statem.gameObject.transform.position.x > 9.5f)) {
-				statem.gameObject.transform.position = new Vector3 (statem.GetComponent<ItemCommon> ().myX, statem.GetComponent<ItemCommon> ().myY, -1);
+			if (statem.GetComponent<ItemCommon>().ifClick == false && statem.GetComponent<ItemCommon>().ifUse == false && (statem.gameObject.transform.position.x < 6.5f || statem.gameObject.transform.position.y < -1.3f || statem.gameObject.transform.position.y > 5.3f))
+			{
+				statem.gameObject.transform.position = new Vector3(statem.GetComponent<ItemCommon>().myX, statem.GetComponent<ItemCommon>().myY, -1);
 			}
-
 		}
 
 		public override void Exit (Statem statem)
