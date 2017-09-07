@@ -7,11 +7,11 @@ using UnityEngine;
 
 public class ArchiveManager : MonoBehaviour {
 
-	public static string path = "save.txt";
-	public static int time = 0;
-	public static int scene = 0;
-	public static Transform itemBlock;
-
+	public string path = "save.txt";
+	public int time = 0;
+	public int scene = 0;
+	public Transform itemBlock;
+	public GameObject[] list;
 
 	private void Awake()
 	{
@@ -27,7 +27,19 @@ public class ArchiveManager : MonoBehaviour {
 		
 	}
 
-	public static void load()
+	public GameObject get(string name)
+	{
+		foreach (GameObject g in list)
+		{
+			if (g.name.Equals(name))
+			{
+				return g;
+			}
+		}
+		return null;
+	}
+
+	public void load()
 	{
 		byte[] byData = new byte[1024];
 
@@ -49,13 +61,13 @@ public class ArchiveManager : MonoBehaviour {
 		foreach (string item in items)
 		{
 			string[] iteminfo = item.Split(' ');
-			GameObject g = (GameObject)Resources.Load("C:\\Users\\asus\\Documents\\GitHub\\The-Crimson\\DrivingToTheWar Ver 0.2\\Assets\\Prefabs\\block");
-			g.transform.position = new Vector3(float.Parse(iteminfo[1]), float.Parse(iteminfo[2]), -1);
+			GameObject g = MonoBehaviour.Instantiate(get(iteminfo[0]), new Vector3(float.Parse(iteminfo[1]), float.Parse(iteminfo[2]), -1), Quaternion.identity);
+			//g.transform.position = new Vector3(float.Parse(iteminfo[1]), float.Parse(iteminfo[2]), -1);
 			g.transform.parent = parent.transform;
 		}
 	}
 
-	public static char[] buildFile()
+	public char[] buildFile()
 	{
 		string file = null;
 		//file += time.ToString() + ",";
@@ -69,7 +81,7 @@ public class ArchiveManager : MonoBehaviour {
 		return file.ToCharArray();
 	}
 
-	public static void save()
+	public void save()
 	{
 		byte[] byData;
 		char[] charData = buildFile();
