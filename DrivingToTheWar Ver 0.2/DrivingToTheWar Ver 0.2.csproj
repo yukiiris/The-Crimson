@@ -79,6 +79,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\B\Archive\ArchiveManager.cs" />
+    <Compile Include="Assets\Scripts\B\Explore\Explore.cs" />
+    <Compile Include="Assets\Scripts\B\Log\LogManager.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraManager.cs" />
     <Compile Include="Assets\Scripts\Camera\LeftButton.cs" />
     <Compile Include="Assets\Scripts\Camera\RightButton.cs" />
@@ -124,6 +126,10 @@
     <Compile Include="Assets\Scripts\Item\ItemInfo.cs" />
     <Compile Include="Assets\Scripts\Item\Re.cs" />
     <Compile Include="Assets\Scripts\Item\UseItem.cs" />
+    <Compile Include="Assets\Scripts\L\Fade.cs" />
+    <Compile Include="Assets\Scripts\L\PuzzleFive\IntPos.cs" />
+    <Compile Include="Assets\Scripts\L\PuzzleFive\PuzzleFiveManager.cs" />
+    <Compile Include="Assets\Scripts\L\PuzzleFive\RightPos.cs" />
     <Compile Include="Assets\Scripts\StateM.cs" />
     <Compile Include="Assets\Scripts\UI\Dialog Box\Dialog.cs" />
     <Compile Include="Assets\Scripts\UI\Menu\AudioManager.cs" />
