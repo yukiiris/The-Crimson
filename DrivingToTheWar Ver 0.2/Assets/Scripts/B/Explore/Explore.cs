@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Explore : MonoBehaviour {
 
-	public static LogManager log;
+	public LogManager manager;
 	public string word;
+	public float time;
 	// Use this for initialization
 	void Start () {
-		log = new LogManager();
+		manager = GameObject.Find("LogManager").GetComponent<LogManager>();
 	}
 	
 	// Update is called once per frame
@@ -18,6 +19,6 @@ public class Explore : MonoBehaviour {
 
 	private void OnMouseDown()
 	{
-		log.show(word, 2);
+		manager.show(word, time);
 	}
 }

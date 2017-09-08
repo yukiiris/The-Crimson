@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraManager : MonoBehaviour {
 
@@ -12,6 +13,12 @@ public class CameraManager : MonoBehaviour {
 	private static float delta = 0;
 	public static bool moveRight = false;
 	public static bool moveLeft = false;
+	static public GameObject toUnload;
+	static public GameObject toLoad;
+	static public string Sub;
+	static public float delayTime;
+	static bool isChanging = false;
+	public GameObject black;
 	// Use this for initialization
 
 	private void Awake()
@@ -24,18 +31,20 @@ public class CameraManager : MonoBehaviour {
 
 	}
 
+	public static void change(GameObject toLoad, GameObject toUnload)
+	{
+		CameraManager.toLoad = toLoad;
+		CameraManager.toUnload = toUnload;
+	}
+
 	// Update is called once per frame
 	void Update()
 	{
 		if (rotateLeft)
 		{
-			delta += rotateSpeed;
-			rotateToLeft();
-			if (delta == 90)
-			{
-				rotateLeft = false;
-				delta = 0;
-			}
+			black.SetActive(true);
+			StartCoroutine(ch());
+			rotateLeft = false;
 		}
 		if (rotateRight)
 		{
@@ -69,17 +78,35 @@ public class CameraManager : MonoBehaviour {
 		}
 
 	}
+	IEnumerator ch()
+	{
+		//Vector3 temp = Player.current.GetComponentInParent<Leg>().transform.position;
+		//black.transform.position = (Vector2)Camera.main.transform.position;
+		Fade.FadeIn(black);
+		yield return new WaitForSeconds(0.5f);
+		toUnload.SetActive(false);
+		toLoad.SetActive(true);
+		//SubtitleSystem.ShowSpecialSubtitle(Sub, delayTime);
+		//yield return new WaitForSeconds(delayTime);
+		//SceneManager.LoadScene(toLoad, LoadSceneMode.Additive);
+		//Player.current.GetComponentInParent<Leg>().transform.position = temp;
+		Fade.Disappear(black);
+		isChanging = false;
+		//Fade.FadeOut(black);
+		//SceneManager.UnloadSceneAsync("过渡场景");
+	}
+
 
 	public static void rotateToLeft()
 	{
 		float y = trans.eulerAngles.y;
-		trans.eulerAngles = new Vector3(0, y - rotateSpeed, 0);
+		trans.eulerAngles = new Vector3(0, -90, 0);
 	}
 
 	public static void rotateToRight()
 	{
 		float y = trans.eulerAngles.y;
-		trans.eulerAngles = new Vector3(0, y + rotateSpeed, 0);
+		trans.eulerAngles = new Vector3(0, 90, 0);
 	}
 
 	public static void moveToRight()

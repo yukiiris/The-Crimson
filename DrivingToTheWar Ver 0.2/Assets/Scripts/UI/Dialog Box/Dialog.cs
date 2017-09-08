@@ -21,7 +21,7 @@ public class Dialog : MonoBehaviour {
 	}
 
 	void Start () {
-		setCount(30);
+		//setCount(30);
 	}
 
 	public void setCount(int count)
@@ -36,12 +36,12 @@ public class Dialog : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (isShow)
-		{
-			ajust();
-			StartCoroutine(showDialog(new Vector3(15, 0, 0), "叫克里斯托你好，我叫克里斯托你好，我叫克里斯托你好，我叫克里斯托你好，我叫克里斯托你好，我叫克里斯托你好，我叫克里斯托你好，我叫克里斯托", 10f));
-			isShow = false;
-		}
+		//if (isShow)
+		//{
+			//ajust();
+			//StartCoroutine(showDialog(new Vector3(15, 0, 0), "叫克里斯托你好，我叫克里斯托你好，我叫克里斯托你好，我叫克里斯托你好，我叫克里斯托你好，我叫克里斯托你好，我叫克里斯托你好，我叫克里斯托", 10f));
+			//isShow = false;
+		//}
 	}
 
 	public void ajust()

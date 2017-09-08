@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class LeftButton : MonoBehaviour {
 
+	public GameObject toLoad;
+	public GameObject toUnload;
 	// Use this for initialization
 	void Start () {
 		
@@ -17,5 +19,6 @@ public class LeftButton : MonoBehaviour {
 	private void OnMouseDown()
 	{
 		CameraManager.rotateLeft = true;
+		CameraManager.change(toLoad, toUnload);
 	}
 }

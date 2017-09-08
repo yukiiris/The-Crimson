@@ -81,6 +81,12 @@
     <Compile Include="Assets\Scripts\B\Archive\ArchiveManager.cs" />
     <Compile Include="Assets\Scripts\B\Explore\Explore.cs" />
     <Compile Include="Assets\Scripts\B\Log\LogManager.cs" />
+    <Compile Include="Assets\Scripts\B\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Scripts\B\StartMenu\ContinueButton.cs" />
+    <Compile Include="Assets\Scripts\B\StartMenu\Fade.cs" />
+    <Compile Include="Assets\Scripts\B\StartMenu\SceneChanger.cs" />
+    <Compile Include="Assets\Scripts\B\StartMenu\SettingsButton.cs" />
+    <Compile Include="Assets\Scripts\B\StartMenu\StartButton.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraManager.cs" />
     <Compile Include="Assets\Scripts\Camera\LeftButton.cs" />
     <Compile Include="Assets\Scripts\Camera\RightButton.cs" />
@@ -126,7 +132,6 @@
     <Compile Include="Assets\Scripts\Item\ItemInfo.cs" />
     <Compile Include="Assets\Scripts\Item\Re.cs" />
     <Compile Include="Assets\Scripts\Item\UseItem.cs" />
-    <Compile Include="Assets\Scripts\L\Fade.cs" />
     <Compile Include="Assets\Scripts\L\PuzzleFive\IntPos.cs" />
     <Compile Include="Assets\Scripts\L\PuzzleFive\PuzzleFiveManager.cs" />
     <Compile Include="Assets\Scripts\L\PuzzleFive\RightPos.cs" />

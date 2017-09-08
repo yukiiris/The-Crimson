@@ -12,7 +12,6 @@ public class LogManager : MonoBehaviour {
 	private float time;
 	// Use this for initialization
 	void Start () {
-		//show("1111", 2.3f);
 	}
 	
 	// Update is called once per frame
