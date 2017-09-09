@@ -88,8 +88,7 @@
     <Compile Include="Assets\Scripts\B\StartMenu\SettingsButton.cs" />
     <Compile Include="Assets\Scripts\B\StartMenu\StartButton.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraManager.cs" />
-    <Compile Include="Assets\Scripts\Camera\LeftButton.cs" />
-    <Compile Include="Assets\Scripts\Camera\RightButton.cs" />
+    <Compile Include="Assets\Scripts\Camera\ChangeButton.cs" />
     <Compile Include="Assets\Scripts\DragonBones\3rdParty\MiniJSON.cs" />
     <Compile Include="Assets\Scripts\DragonBones\animation\Animation.cs" />
     <Compile Include="Assets\Scripts\DragonBones\animation\AnimationState.cs" />

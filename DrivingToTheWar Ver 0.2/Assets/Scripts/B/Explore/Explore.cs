@@ -6,7 +6,7 @@ public class Explore : MonoBehaviour {
 
 	public LogManager manager;
 	public string word;
-	public float time;
+	public float time = 4;
 	// Use this for initialization
 	void Start () {
 		manager = GameObject.Find("LogManager").GetComponent<LogManager>();

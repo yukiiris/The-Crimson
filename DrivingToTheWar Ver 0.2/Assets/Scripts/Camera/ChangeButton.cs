@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LeftButton : MonoBehaviour {
+public class ChangeButton : MonoBehaviour {
 
 	public GameObject toLoad;
 	public GameObject toUnload;
@@ -18,7 +18,7 @@ public class LeftButton : MonoBehaviour {
 
 	private void OnMouseDown()
 	{
-		CameraManager.rotateLeft = true;
+		CameraManager.isChanging = true;
 		CameraManager.change(toLoad, toUnload);
 	}
 }

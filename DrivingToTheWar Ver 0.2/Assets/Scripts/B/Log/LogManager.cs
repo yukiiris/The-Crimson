@@ -10,6 +10,7 @@ public class LogManager : MonoBehaviour {
 	private bool isShow = false;
 	private string context;
 	private float time;
+	public bool isEmpty = true;
 	// Use this for initialization
 	void Start () {
 	}

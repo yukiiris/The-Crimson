@@ -5,11 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class CameraManager : MonoBehaviour {
 
-	public static float rotateSpeed = 3;
 	public static float moveSpeed = 0.2f;
 	public static Transform trans;
-	public static bool rotateLeft = false;
-	public static bool rotateRight = false;
 	private static float delta = 0;
 	public static bool moveRight = false;
 	public static bool moveLeft = false;
@@ -17,7 +14,7 @@ public class CameraManager : MonoBehaviour {
 	static public GameObject toLoad;
 	static public string Sub;
 	static public float delayTime;
-	static bool isChanging = false;
+	static public bool isChanging = false;
 	public GameObject black;
 	// Use this for initialization
 
@@ -40,21 +37,11 @@ public class CameraManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update()
 	{
-		if (rotateLeft)
+		if (isChanging)
 		{
 			black.SetActive(true);
 			StartCoroutine(ch());
-			rotateLeft = false;
-		}
-		if (rotateRight)
-		{
-			delta += rotateSpeed;
-			rotateToRight();
-			if (delta == 90)
-			{
-				rotateRight = false;
-				delta = 0;
-			}
+			isChanging = false;
 		}
 		if (moveLeft)
 		{
@@ -80,34 +67,14 @@ public class CameraManager : MonoBehaviour {
 	}
 	IEnumerator ch()
 	{
-		//Vector3 temp = Player.current.GetComponentInParent<Leg>().transform.position;
-		//black.transform.position = (Vector2)Camera.main.transform.position;
+		black.SetActive(true);
 		Fade.FadeIn(black);
-		yield return new WaitForSeconds(0.5f);
+		yield return new WaitForSeconds(0.2f);
 		toUnload.SetActive(false);
 		toLoad.SetActive(true);
-		//SubtitleSystem.ShowSpecialSubtitle(Sub, delayTime);
-		//yield return new WaitForSeconds(delayTime);
-		//SceneManager.LoadScene(toLoad, LoadSceneMode.Additive);
-		//Player.current.GetComponentInParent<Leg>().transform.position = temp;
-		Fade.Disappear(black);
-		isChanging = false;
-		//Fade.FadeOut(black);
-		//SceneManager.UnloadSceneAsync("过渡场景");
+		Fade.FadeOut(black);
 	}
 
-
-	public static void rotateToLeft()
-	{
-		float y = trans.eulerAngles.y;
-		trans.eulerAngles = new Vector3(0, -90, 0);
-	}
-
-	public static void rotateToRight()
-	{
-		float y = trans.eulerAngles.y;
-		trans.eulerAngles = new Vector3(0, 90, 0);
-	}
 
 	public static void moveToRight()
 	{
