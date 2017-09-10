@@ -80,6 +80,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\B\Archive\ArchiveManager.cs" />
     <Compile Include="Assets\Scripts\B\Explore\Explore.cs" />
+    <Compile Include="Assets\Scripts\B\Interact\Interact.cs" />
     <Compile Include="Assets\Scripts\B\Log\LogManager.cs" />
     <Compile Include="Assets\Scripts\B\NewBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\B\StartMenu\ContinueButton.cs" />
@@ -134,6 +135,10 @@
     <Compile Include="Assets\Scripts\L\PuzzleFive\IntPos.cs" />
     <Compile Include="Assets\Scripts\L\PuzzleFive\PuzzleFiveManager.cs" />
     <Compile Include="Assets\Scripts\L\PuzzleFive\RightPos.cs" />
+    <Compile Include="Assets\Scripts\L\PuzzlePosterSafe\SafeButton.cs" />
+    <Compile Include="Assets\Scripts\L\PuzzleSearch\SearchPoint.cs" />
+    <Compile Include="Assets\Scripts\L\PuzzleSearch\SetBooks.cs" />
+    <Compile Include="Assets\Scripts\L\UI\CloseGameobject.cs" />
     <Compile Include="Assets\Scripts\StateM.cs" />
     <Compile Include="Assets\Scripts\UI\Dialog Box\Dialog.cs" />
     <Compile Include="Assets\Scripts\UI\Menu\AudioManager.cs" />

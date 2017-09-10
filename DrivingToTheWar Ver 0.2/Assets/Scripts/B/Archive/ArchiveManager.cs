@@ -19,7 +19,7 @@ public class ArchiveManager : MonoBehaviour {
 	}
 	// Use this for initialization
 	void Start () {
-		load();
+		//load();
 	}
 	
 	// Update is called once per frame

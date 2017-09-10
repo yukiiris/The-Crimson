@@ -10,11 +10,11 @@ public class RightPos : MonoBehaviour {
 
 	void OnMouseUp(){
 		if (gameObject.transform.localPosition.x == rightXPos&&gameObject.transform.localPosition.y == rightYPos&&ifOnRightPlace==false) {
-			manager.GetComponent<PuzzleFiveManager> ().rightNum++;
+			manager.GetComponent<PuzzleManager> ().rightNum++;
 			ifOnRightPlace = true;
 		}
 		if ((gameObject.transform.localPosition.x != rightXPos||gameObject.transform.localPosition.y != rightYPos)&&ifOnRightPlace==true) {
-			manager.GetComponent<PuzzleFiveManager> ().rightNum--;
+			manager.GetComponent<PuzzleManager> ().rightNum--;
 			ifOnRightPlace = false;
 		}
 	}
