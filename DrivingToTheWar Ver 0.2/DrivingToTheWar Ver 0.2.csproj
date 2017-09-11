@@ -80,6 +80,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\B\Archive\ArchiveManager.cs" />
     <Compile Include="Assets\Scripts\B\Explore\Explore.cs" />
+    <Compile Include="Assets\Scripts\B\Interact\ChangeScene.cs" />
     <Compile Include="Assets\Scripts\B\Interact\Interact.cs" />
     <Compile Include="Assets\Scripts\B\Log\LogManager.cs" />
     <Compile Include="Assets\Scripts\B\NewBehaviourScript.cs" />
