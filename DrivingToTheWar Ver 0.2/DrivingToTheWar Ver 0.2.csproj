@@ -85,6 +85,7 @@
     <Compile Include="Assets\Scripts\B\Interact\EventSwitch.cs" />
     <Compile Include="Assets\Scripts\B\Interact\Interact.cs" />
     <Compile Include="Assets\Scripts\B\Log\LogManager.cs" />
+    <Compile Include="Assets\Scripts\B\note.cs" />
     <Compile Include="Assets\Scripts\B\StartMenu\ContinueButton.cs" />
     <Compile Include="Assets\Scripts\B\StartMenu\Fade.cs" />
     <Compile Include="Assets\Scripts\B\StartMenu\SceneChanger.cs" />

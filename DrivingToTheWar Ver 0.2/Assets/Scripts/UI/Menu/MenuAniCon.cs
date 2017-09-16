@@ -9,13 +9,13 @@ public class MenuAniCon : MonoBehaviour {
 	public bool ifClose=false;
 	private UnityArmatureComponent uac;
 	private OnMouseTouch omt;
-	private GameObject audioController;
+	public GameObject audioController;
 
 	// Use this for initialization
 	void Start () {
 		uac = GetComponent<UnityArmatureComponent> ();
 		omt = GetComponentInParent<OnMouseTouch> ();
-		audioController = GameObject.Find("Audio Controller");
+		//audioController = GameObject.Find("Audio Controller");
 		audioController.SetActive(false);
 	}
 
