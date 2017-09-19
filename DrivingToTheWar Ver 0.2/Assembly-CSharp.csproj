@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{704E3E28-FA64-1D93-3EDF-39851F366551}</ProjectGuid>
+    <ProjectGuid>{FE9F69A7-C477-E19F-33C2-D1B70E8F2029}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -46,10 +46,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Archive\ArchiveManager.cs" />
+     <Compile Include="Assets\Scripts\B\Archive\ArchiveManager.cs" />
+     <Compile Include="Assets\Scripts\B\Explore\Explore.cs" />
+     <Compile Include="Assets\Scripts\B\Interact\BookShelf.cs" />
+     <Compile Include="Assets\Scripts\B\Interact\ChangeScene.cs" />
+     <Compile Include="Assets\Scripts\B\Interact\EventSwitch.cs" />
+     <Compile Include="Assets\Scripts\B\Interact\Interact.cs" />
+     <Compile Include="Assets\Scripts\B\Log\LogManager.cs" />
+     <Compile Include="Assets\Scripts\B\StartMenu\ContinueButton.cs" />
+     <Compile Include="Assets\Scripts\B\StartMenu\Fade.cs" />
+     <Compile Include="Assets\Scripts\B\StartMenu\SceneChanger.cs" />
+     <Compile Include="Assets\Scripts\B\StartMenu\SettingsButton.cs" />
+     <Compile Include="Assets\Scripts\B\StartMenu\StartButton.cs" />
+     <Compile Include="Assets\Scripts\B\note.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraManager.cs" />
-     <Compile Include="Assets\Scripts\Camera\LeftButton.cs" />
-     <Compile Include="Assets\Scripts\Camera\RightButton.cs" />
+     <Compile Include="Assets\Scripts\Camera\ChangeButton.cs" />
      <Compile Include="Assets\Scripts\DragonBones\3rdParty\MiniJSON.cs" />
      <Compile Include="Assets\Scripts\DragonBones\animation\Animation.cs" />
      <Compile Include="Assets\Scripts\DragonBones\animation\AnimationState.cs" />
@@ -92,6 +103,17 @@
      <Compile Include="Assets\Scripts\Item\ItemInfo.cs" />
      <Compile Include="Assets\Scripts\Item\Re.cs" />
      <Compile Include="Assets\Scripts\Item\UseItem.cs" />
+     <Compile Include="Assets\Scripts\L\PuzzleFive\IntPos.cs" />
+     <Compile Include="Assets\Scripts\L\PuzzleFive\PuzzleManager.cs" />
+     <Compile Include="Assets\Scripts\L\PuzzleFive\RightPos.cs" />
+     <Compile Include="Assets\Scripts\L\PuzzlePosterSafe\SafeButton.cs" />
+     <Compile Include="Assets\Scripts\L\PuzzleSearch\SearchPoint.cs" />
+     <Compile Include="Assets\Scripts\L\PuzzleSearch\SetBooks.cs" />
+     <Compile Include="Assets\Scripts\L\Show\CandleShade.cs" />
+     <Compile Include="Assets\Scripts\L\Show\ChangeAlpha.cs" />
+     <Compile Include="Assets\Scripts\L\UI\CloseGameobject.cs" />
+     <Compile Include="Assets\Scripts\L\UI\MouseOverAni.cs" />
+     <Compile Include="Assets\Scripts\L\UI\PressButtonAni.cs" />
      <Compile Include="Assets\Scripts\StateM.cs" />
      <Compile Include="Assets\Scripts\UI\Dialog Box\Dialog.cs" />
      <Compile Include="Assets\Scripts\UI\Menu\AudioManager.cs" />

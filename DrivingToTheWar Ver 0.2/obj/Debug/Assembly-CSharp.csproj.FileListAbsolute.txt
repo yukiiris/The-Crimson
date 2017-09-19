@@ -27,3 +27,32 @@ E:\The-Crimson-commoly-used\The-Crimson\DrivingToTheWar\Temp\bin\Debug\UnityEngi
 E:\The-Crimson-commoly-used\The-Crimson\DrivingToTheWar\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 E:\The-Crimson-commoly-used\The-Crimson\DrivingToTheWar\obj\Debug\Assembly-CSharp.dll
 E:\The-Crimson-commoly-used\The-Crimson\DrivingToTheWar\obj\Debug\Assembly-CSharp.pdb
+E:\DrivingToTheWar Ver 0.2\Temp\bin\Debug\Assembly-CSharp.dll
+E:\DrivingToTheWar Ver 0.2\Temp\bin\Debug\Assembly-CSharp.pdb
+E:\DrivingToTheWar Ver 0.2\Temp\bin\Debug\UnityEditor.dll
+E:\DrivingToTheWar Ver 0.2\Temp\bin\Debug\UnityEngine.Analytics.dll
+E:\DrivingToTheWar Ver 0.2\Temp\bin\Debug\UnityEngine.dll
+E:\DrivingToTheWar Ver 0.2\Temp\bin\Debug\UnityEngine.HoloLens.dll
+E:\DrivingToTheWar Ver 0.2\Temp\bin\Debug\UnityEngine.Networking.dll
+E:\DrivingToTheWar Ver 0.2\Temp\bin\Debug\UnityEngine.PlaymodeTestsRunner.dll
+E:\DrivingToTheWar Ver 0.2\Temp\bin\Debug\UnityEngine.UI.dll
+E:\DrivingToTheWar Ver 0.2\Temp\bin\Debug\UnityEngine.VR.dll
+E:\DrivingToTheWar Ver 0.2\Temp\bin\Debug\Mono.Cecil.dll
+E:\DrivingToTheWar Ver 0.2\Temp\bin\Debug\Unity.SerializationLogic.dll
+E:\DrivingToTheWar Ver 0.2\Temp\bin\Debug\Unity.DataContract.dll
+E:\DrivingToTheWar Ver 0.2\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+E:\DrivingToTheWar Ver 0.2\Temp\bin\Debug\Unity.UNetWeaver.dll
+E:\DrivingToTheWar Ver 0.2\Temp\bin\Debug\Unity.CecilTools.dll
+E:\DrivingToTheWar Ver 0.2\Temp\bin\Debug\Mono.Cecil.Pdb.dll
+E:\DrivingToTheWar Ver 0.2\Temp\bin\Debug\Mono.Cecil.Mdb.dll
+E:\DrivingToTheWar Ver 0.2\Temp\bin\Debug\UnityEngine.xml
+E:\DrivingToTheWar Ver 0.2\Temp\bin\Debug\UnityEditor.xml
+E:\DrivingToTheWar Ver 0.2\Temp\bin\Debug\UnityEngine.UI.xml
+E:\DrivingToTheWar Ver 0.2\Temp\bin\Debug\UnityEngine.Networking.xml
+E:\DrivingToTheWar Ver 0.2\Temp\bin\Debug\UnityEngine.PlaymodeTestsRunner.xml
+E:\DrivingToTheWar Ver 0.2\Temp\bin\Debug\UnityEngine.Analytics.xml
+E:\DrivingToTheWar Ver 0.2\Temp\bin\Debug\UnityEngine.HoloLens.xml
+E:\DrivingToTheWar Ver 0.2\Temp\bin\Debug\UnityEngine.VR.xml
+E:\DrivingToTheWar Ver 0.2\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+E:\DrivingToTheWar Ver 0.2\obj\Debug\Assembly-CSharp.dll
+E:\DrivingToTheWar Ver 0.2\obj\Debug\Assembly-CSharp.pdb

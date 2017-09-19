@@ -136,12 +136,16 @@
     <Compile Include="Assets\Scripts\Item\Re.cs" />
     <Compile Include="Assets\Scripts\Item\UseItem.cs" />
     <Compile Include="Assets\Scripts\L\PuzzleFive\IntPos.cs" />
-    <Compile Include="Assets\Scripts\L\PuzzleFive\PuzzleFiveManager.cs" />
+    <Compile Include="Assets\Scripts\L\PuzzleFive\PuzzleManager.cs" />
     <Compile Include="Assets\Scripts\L\PuzzleFive\RightPos.cs" />
     <Compile Include="Assets\Scripts\L\PuzzlePosterSafe\SafeButton.cs" />
     <Compile Include="Assets\Scripts\L\PuzzleSearch\SearchPoint.cs" />
     <Compile Include="Assets\Scripts\L\PuzzleSearch\SetBooks.cs" />
+    <Compile Include="Assets\Scripts\L\Show\CandleShade.cs" />
+    <Compile Include="Assets\Scripts\L\Show\ChangeAlpha.cs" />
     <Compile Include="Assets\Scripts\L\UI\CloseGameobject.cs" />
+    <Compile Include="Assets\Scripts\L\UI\MouseOverAni.cs" />
+    <Compile Include="Assets\Scripts\L\UI\PressButtonAni.cs" />
     <Compile Include="Assets\Scripts\StateM.cs" />
     <Compile Include="Assets\Scripts\UI\Dialog Box\Dialog.cs" />
     <Compile Include="Assets\Scripts\UI\Menu\AudioManager.cs" />
