@@ -73,6 +73,8 @@ public class CameraManager : MonoBehaviour {
 		toUnload.SetActive(false);
 		toLoad.SetActive(true);
 		Fade.FadeOut(black);
+		yield return new WaitForSeconds(0.2f);
+		black.SetActive(false);
 	}
 
 
