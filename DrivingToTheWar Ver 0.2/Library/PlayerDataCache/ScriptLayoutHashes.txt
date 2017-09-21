@@ -112,6 +112,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 d477edb06f56ff60a039f4f0e813f934 Assembly-CSharp.dll:.LogManager
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ExitButton
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
@@ -172,4 +173,4 @@ d953820169cb028214a40c10d18224cc Assembly-CSharp.dll:.IntPos
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ContinueButton
 142a82b3649a942ace32850ee64400e7 Assembly-CSharp.dll:.Explore
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.BookShelf
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ExitButton
+066e28d9231babfac7e3a23648f352c8 Assembly-CSharp.dll:.DragonBonesAniImport

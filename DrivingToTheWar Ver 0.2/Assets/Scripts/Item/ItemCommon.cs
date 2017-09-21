@@ -32,7 +32,6 @@ public class ItemCommon : Statem {
 
 		public override void Execute (Statem statem)
 		{
-			
 			if (statem.gameObject.transform.position.x > 6.5f && statem.GetComponent<ItemCommon> ().ifClick == true) {
 				statem.ChangeState (new UnUseState ());
 			} 

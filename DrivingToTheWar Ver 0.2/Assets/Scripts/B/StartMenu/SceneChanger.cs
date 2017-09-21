@@ -11,7 +11,7 @@ public class SceneChanger : MonoBehaviour
 	static public float delayTime;
 	static bool isChanging = false;
 	public GameObject black;
-	public static GameObject itemBlock;
+	//public static GameObject itemBlock;
 
 	static public void Change(string tounload, string toload, string sub = "", float delaytime = 0.4f)
 	{
@@ -28,8 +28,8 @@ public class SceneChanger : MonoBehaviour
 
 	private void Awake()
 	{
-		itemBlock = GameObject.FindGameObjectWithTag("ItemBlock");
-		itemBlock.SetActive(false);
+		//itemBlock = GameObject.FindGameObjectWithTag("ItemBlock");
+		//itemBlock.SetActive(false);
 	}
 	// Use this for initialization
 	void Start()
@@ -57,6 +57,6 @@ public class SceneChanger : MonoBehaviour
 		Fade.FadeOut(black);
 		SceneManager.LoadScene(toLoad, LoadSceneMode.Additive);
 		isChanging = false;
-		itemBlock.SetActive(true);
+		//itemBlock.SetActive(true);
 	}
 }
