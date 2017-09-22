@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EventButton : MonoBehaviour {
 
-	public bool[] buttons = new bool[5];
+	public static bool[] buttons = new bool[5];
 	// Use this for initialization
 	private void Awake()
 	{

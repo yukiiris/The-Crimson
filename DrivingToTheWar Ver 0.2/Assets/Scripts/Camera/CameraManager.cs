@@ -20,12 +20,13 @@ public class CameraManager : MonoBehaviour {
 
 	private void Awake()
 	{
-		trans = GameObject.FindGameObjectWithTag("MainCamera").transform;
+		//trans = GameObject.FindGameObjectWithTag("MainCamera").transform;
+		//SceneManager.LoadScene("Menu", LoadSceneMode.Additive);
 	}
 
 	void Start()
 	{
-
+		trans = GameObject.FindGameObjectWithTag("MainCamera").transform;
 	}
 
 	public static void change(GameObject toLoad, GameObject toUnload)

@@ -45,6 +45,7 @@ public class SetBooks : MonoBehaviour {
 			//文字
 			text = Instantiate (texts [randomNum [i]]);
 			text.transform.parent = textParent.transform;
+			text.transform.localScale = new Vector3(1, 1, 1);
 			textPos.y = textY;
 			textY = textY - 50f;
 			text.transform.localPosition = textPos;
@@ -52,7 +53,7 @@ public class SetBooks : MonoBehaviour {
 			//shu
 			book = Instantiate (books [randomNum [i]]);
 			bookPos = book.transform.localPosition;
-			book.transform.parent = bookParent.transform; 
+			book.transform.parent = bookParent.transform;
 			book.transform.localPosition = bookPos;
 			book.GetComponent<SearchPoint> ().text = text;
 			book.GetComponent<SearchPoint> ().manager = bookParent.transform.GetChild (0).gameObject;

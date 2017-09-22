@@ -1,4 +1,5 @@
 WindowsStandalone
+6853f1e04593a2bb17bbe9c79c3c72d1 Assembly-CSharp.dll:.Notebook
 b987933296af7affc0ec60187e8265d3 Assembly-CSharp.dll:.Re
 dc07d7ad69b399a46e92c483bf1c04ca UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
@@ -123,6 +124,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.Spa
 1b175a465500f6d74cfc8af3f048aff1 Assembly-CSharp.dll:.SetBooks
 22f3e7b4f1ce5f9419e93dc15c61444f Assembly-CSharp.dll:.UseItem
 1a1d936c7ae360f297f86c89b0362f7f Assembly-CSharp.dll:.ChangeScene
+9140fdaf9d68d178ef8fdaab7debc40a Assembly-CSharp.dll:.CrossForScene
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Drag
 7ac2b5f60c508a6cc6875260bd974442 Assembly-CSharp.dll:.ArchiveManager
 a823e0248804860dacf200dd22027ab6 Assembly-CSharp.dll:.SearchPoint
@@ -158,6 +160,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.Spa
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingRenderer
 786bcb0f03e57f7b7849312d7bc6e57d Assembly-CSharp.dll:.ItemCommon
 1b6b7844e6cf6858267fd458f63a2827 Assembly-CSharp.dll:.SceneChanger
+3196795be7d0fd6f0ca2961f79d28baa Assembly-CSharp.dll:.CrossForObject
 92ec000703f0be398e232421464690d9 Assembly-CSharp.dll:DragonBones.UnityBone
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.EventSwitch
 1459589575cbffe076919498c865de87 Assembly-CSharp.dll:.ChangeAlpha
@@ -168,9 +171,10 @@ e77b87d6e0b00f20ba642b49075401b7 Assembly-CSharp.dll:.ItemInfo
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.StartButton
 ff68c5f72730f3b56df1dfdf9fb9fa0d Assembly-CSharp.dll:.MouseOverAni
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CloseGameobject
+066e28d9231babfac7e3a23648f352c8 Assembly-CSharp.dll:.DragonBonesAniImport
 d953820169cb028214a40c10d18224cc Assembly-CSharp.dll:.IntPos
-97948443a768ef11a11fa2692dc00f56 Assembly-CSharp.dll:.PuzzleManager
+82a886461b0d9569a9ecde74d7ec8274 Assembly-CSharp.dll:.PuzzleManager
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ContinueButton
 142a82b3649a942ace32850ee64400e7 Assembly-CSharp.dll:.Explore
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.BookShelf
-066e28d9231babfac7e3a23648f352c8 Assembly-CSharp.dll:.DragonBonesAniImport
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.EventButton
