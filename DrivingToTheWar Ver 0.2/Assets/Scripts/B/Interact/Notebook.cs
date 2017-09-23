@@ -8,8 +8,7 @@ public class Notebook : MonoBehaviour {
 	public GameObject notebook;
 	// Use this for initialization
 	void Start () {
-		notebook = GameObject.FindGameObjectWithTag("Notebook");
-		notebook.SetActive(false);
+
 	}
 	
 	// Update is called once per frame

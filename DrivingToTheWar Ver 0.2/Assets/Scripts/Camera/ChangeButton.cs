@@ -18,7 +18,11 @@ public class ChangeButton : MonoBehaviour {
 
 	private void OnMouseDown()
 	{
-		CameraManager.isChanging = true;
-		CameraManager.change(toLoad, toUnload);
+		print(Black.isActive);
+		if (!Black.isActive)
+		{
+			CameraManager.isChanging = true;
+			CameraManager.change(toLoad, toUnload);
+		}
 	}
 }

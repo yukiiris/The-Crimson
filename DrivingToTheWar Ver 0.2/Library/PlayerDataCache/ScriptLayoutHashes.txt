@@ -178,3 +178,4 @@ d953820169cb028214a40c10d18224cc Assembly-CSharp.dll:.IntPos
 142a82b3649a942ace32850ee64400e7 Assembly-CSharp.dll:.Explore
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.BookShelf
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.EventButton
+1b6b7844e6cf6858267fd458f63a2827 Assembly-CSharp.dll:.Black

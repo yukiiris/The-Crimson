@@ -90,6 +90,7 @@
     <Compile Include="Assets\Scripts\B\Interact\Notebook.cs" />
     <Compile Include="Assets\Scripts\B\Log\LogManager.cs" />
     <Compile Include="Assets\Scripts\B\note.cs" />
+    <Compile Include="Assets\Scripts\B\StartMenu\Black.cs" />
     <Compile Include="Assets\Scripts\B\StartMenu\ContinueButton.cs" />
     <Compile Include="Assets\Scripts\B\StartMenu\ExitButton.cs" />
     <Compile Include="Assets\Scripts\B\StartMenu\Fade.cs" />

@@ -57,6 +57,7 @@ public class SceneChanger : MonoBehaviour
 		Fade.FadeOut(black);
 		SceneManager.LoadScene(toLoad, LoadSceneMode.Additive);
 		isChanging = false;
-		//itemBlock.SetActive(true);
+		yield return new WaitForSeconds(0.4f);
+		black.SetActive(false);
 	}
 }
