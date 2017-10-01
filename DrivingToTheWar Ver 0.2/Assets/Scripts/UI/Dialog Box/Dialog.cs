@@ -9,19 +9,36 @@ public class Dialog : MonoBehaviour {
 	public  GameObject[] dialogs = new GameObject[6];
 	public  Text text;
 	public float width;
-	public bool isShow = true;
+	public bool isShow = false;
 	int wordCount = 16;
 	private Dialog instance;
+	private string context;
+	private Vector3 position;
+	private float time;
+	private Vector3 oldPosition0;
+	private Vector3 oldPosition1;
 	// Use this for initialization
 
 	private void Awake()
 	{
+		oldPosition0 = dialogs[0].GetComponent<RectTransform>().anchoredPosition3D;
+		oldPosition1 = dialogs[1].GetComponent<RectTransform>().anchoredPosition3D;
 		width = dialogs[1].GetComponent<RectTransform>().sizeDelta.x;
-		instance = new Dialog();
+
 	}
 
 	void Start () {
 		//setCount(30);
+	}
+
+	public void show(string context, Vector3 position, float time = 3f)
+	{
+		if (dialogs[0].active == true)
+			return;
+		this.context = context;
+		this.time = time;
+		this.position = position;
+		isShow = true;
 	}
 
 	public void setCount(int count)
@@ -36,12 +53,12 @@ public class Dialog : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		//if (isShow)
-		//{
-			//ajust();
-			//StartCoroutine(showDialog(new Vector3(15, 0, 0), "叫克里斯托你好，我叫克里斯托你好，我叫克里斯托你好，我叫克里斯托你好，我叫克里斯托你好，我叫克里斯托你好，我叫克里斯托你好，我叫克里斯托", 10f));
-			//isShow = false;
-		//}
+		if (isShow)
+		{
+			ajust();
+			StartCoroutine(showDialog(position, context, time));
+			isShow = false;
+		}
 	}
 
 	public void ajust()
@@ -53,9 +70,9 @@ public class Dialog : MonoBehaviour {
 		text.rectTransform.sizeDelta = new Vector2(wordCount * 14, 177);
 		Vector3 v = dialogs[0].GetComponent<RectTransform>().anchoredPosition3D;
 		width = dialogs[1].GetComponent<RectTransform>().sizeDelta.x;
-		print(width);
 		dialogs[0].GetComponent<RectTransform>().anchoredPosition3D =
 			new Vector3(dialogs[1].GetComponent<RectTransform>().anchoredPosition3D.x - width / 2 - 35, v.y, v.z);
+		//oldPosition = dialogs[0].GetComponent<RectTransform>().anchoredPosition3D;
 	}
 
 
@@ -88,13 +105,15 @@ public class Dialog : MonoBehaviour {
 			dialogs[j].SetActive(false);
 		}
 		text.text = "";
+		dialogs[0].GetComponent<RectTransform>().anchoredPosition = oldPosition0;
+		dialogs[1].GetComponent<RectTransform>().anchoredPosition = oldPosition1;
 	}
 
 	public IEnumerator f()
 	{
 		int t = 2;
 		yield return 0;
-		showDialog(new Vector3(10, 0, 0), "你好，我是克里斯托，来自中国", 2.2f);
+		//showDialog(new Vector3(10, 0, 0), "你好，我是克里斯托，来自中国", 2.2f);
 		yield return new WaitForSeconds(t);
 		Debug.Log(t);
 		for (int j = 0; j <= 5; j++)

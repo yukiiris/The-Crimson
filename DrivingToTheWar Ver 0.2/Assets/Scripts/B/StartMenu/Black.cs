@@ -14,7 +14,6 @@ public class Black : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		isActive = black.active;
-		print(isActive);
 	}
 
 }
