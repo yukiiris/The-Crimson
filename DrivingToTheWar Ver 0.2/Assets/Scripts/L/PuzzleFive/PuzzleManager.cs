@@ -8,10 +8,18 @@ public class PuzzleManager : MonoBehaviour {
 	public bool ifPuzzleWin = false;
 	public int ID;
 
+
+	private void Start()
+	{
+
+	}
+
 	void Update () {
 		if (rightNum == winNum) {
 			ifPuzzleWin = true;
 			EventButton.buttons[ID] = true;
+			ChangeForWin.flag = true;
+			
 		}
 	}
 }

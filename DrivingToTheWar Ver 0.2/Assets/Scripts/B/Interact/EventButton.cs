@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class EventButton : MonoBehaviour {
 
-	public static bool[] buttons = new bool[5];
+	public static bool[] buttons = { true, true, true, true };
 	// Use this for initialization
 	private void Awake()
 	{
 		for (int i = 0; i < 5; i++)
 		{
-			buttons[i] = false;
+			//buttons[i] = false;
 		}
 	}
 	void Start () {

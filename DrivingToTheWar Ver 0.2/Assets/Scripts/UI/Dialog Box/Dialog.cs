@@ -15,14 +15,17 @@ public class Dialog : MonoBehaviour {
 	private string context;
 	private Vector3 position;
 	private float time;
-	private Vector3 oldPosition0;
-	private Vector3 oldPosition1;
+	private Vector3[] oldPosition = new Vector3[6];
 	// Use this for initialization
 
 	private void Awake()
 	{
-		oldPosition0 = dialogs[0].GetComponent<RectTransform>().anchoredPosition3D;
-		oldPosition1 = dialogs[1].GetComponent<RectTransform>().anchoredPosition3D;
+		int i = 0;
+		foreach (GameObject d in dialogs)
+		{
+			oldPosition[i] = d.GetComponent<RectTransform>().anchoredPosition3D;
+			i++;
+		}
 		width = dialogs[1].GetComponent<RectTransform>().sizeDelta.x;
 
 	}
@@ -72,7 +75,6 @@ public class Dialog : MonoBehaviour {
 		width = dialogs[1].GetComponent<RectTransform>().sizeDelta.x;
 		dialogs[0].GetComponent<RectTransform>().anchoredPosition3D =
 			new Vector3(dialogs[1].GetComponent<RectTransform>().anchoredPosition3D.x - width / 2 - 35, v.y, v.z);
-		//oldPosition = dialogs[0].GetComponent<RectTransform>().anchoredPosition3D;
 	}
 
 
@@ -83,20 +85,22 @@ public class Dialog : MonoBehaviour {
 		text.text = words;
 		dialog.GetComponent<RectTransform>().anchoredPosition3D = position;
 		dialogs[0].GetComponent<RectTransform>().anchoredPosition3D =
-			new Vector3(dialogs[0].GetComponent<RectTransform>().anchoredPosition3D.x, dialogs[0].GetComponent<RectTransform>().anchoredPosition3D.y - 20 * i, dialogs[0].GetComponent<RectTransform>().anchoredPosition3D.z);
-
+			new Vector3(dialogs[0].GetComponent<RectTransform>().anchoredPosition3D.x, dialogs[0].GetComponent<RectTransform>().anchoredPosition3D.y - 20 * (i - 1), dialogs[0].GetComponent<RectTransform>().anchoredPosition3D.z);
+		
 		for (int j = 0; j <= i; j++)
 		{
 			dialogs[j].SetActive(true);
 		}
+		dialogs[1].GetComponent<RectTransform>().anchoredPosition = new Vector3(dialogs[1].GetComponent<RectTransform>().anchoredPosition3D.x + 0.01f, dialogs[1].GetComponent<RectTransform>().anchoredPosition3D.y, dialogs[1].GetComponent<RectTransform>().anchoredPosition3D.z);;
 		dialogs[i].SetActive(true);
 		dialogs[i].GetComponent<RectTransform>().sizeDelta = new Vector2((words.Length % wordCount) *14 + 36, 35);
+		dialogs[0].GetComponent<RectTransform>().anchoredPosition = new Vector3(dialogs[0].GetComponent<RectTransform>().anchoredPosition3D.x, dialogs[0].GetComponent<RectTransform>().anchoredPosition3D.y + 0.1f, dialogs[0].GetComponent<RectTransform>().anchoredPosition3D.z);
 
 
 		Vector3 v = dialogs[i].GetComponent<RectTransform>().anchoredPosition3D;
 		//print(dialogs[i].GetComponent<RectTransform>().anchoredPosition3D.x);
 		dialogs[i].GetComponent<RectTransform>().anchoredPosition3D = new Vector3(v.x - (width - dialogs[i].GetComponent<RectTransform>().sizeDelta.x) / 2, v.y, v.z);
-		//print(dialogs[i].GetComponent<RectTransform>().anchoredPosition3D.x);
+		//print(dialogs[1].GetComponent<RectTransform>().anchoredPosition3D.x);
 		
 
 		yield return new WaitForSeconds(time);
@@ -105,8 +109,12 @@ public class Dialog : MonoBehaviour {
 			dialogs[j].SetActive(false);
 		}
 		text.text = "";
-		dialogs[0].GetComponent<RectTransform>().anchoredPosition = oldPosition0;
-		dialogs[1].GetComponent<RectTransform>().anchoredPosition = oldPosition1;
+		int k = 0;
+		foreach (GameObject d in dialogs)
+		{
+			d.GetComponent<RectTransform>().anchoredPosition3D = oldPosition[k];
+			k++;
+		}
 	}
 
 	public IEnumerator f()
