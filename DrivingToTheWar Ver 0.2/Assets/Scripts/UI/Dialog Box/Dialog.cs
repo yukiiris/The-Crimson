@@ -62,6 +62,11 @@ public class Dialog : MonoBehaviour {
 			StartCoroutine(showDialog(position, context, time));
 			isShow = false;
 		}
+
+		if (Black.isActive)
+		{
+			disappear();
+		}
 	}
 
 	public void ajust()
@@ -81,7 +86,7 @@ public class Dialog : MonoBehaviour {
 
 	public IEnumerator showDialog(Vector3 position, string words, float time)
 	{
-		int i = words.Length / wordCount + 1;
+		int i = words.Length / wordCount + 1; 
 		text.text = words;
 		dialog.GetComponent<RectTransform>().anchoredPosition3D = position;
 		dialogs[0].GetComponent<RectTransform>().anchoredPosition3D =
@@ -115,6 +120,15 @@ public class Dialog : MonoBehaviour {
 			d.GetComponent<RectTransform>().anchoredPosition3D = oldPosition[k];
 			k++;
 		}
+	}
+
+	public void disappear()
+	{
+		for (int j = 0; j <= 5; j++)
+		{
+			dialogs[j].SetActive(false);
+		}
+		text.text = "";
 	}
 
 	public IEnumerator f()

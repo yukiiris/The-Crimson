@@ -84,6 +84,7 @@ f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 1b8c02d0aa82fbf036a2b9b2d713eec3 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Increase
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CandleShade
+5fc01ec1c741b0f9229c09639d41e455 Assembly-CSharp.dll:.RepoterID
 0882a3d99a1458e4fa9bc7dd238db0b2 Assembly-CSharp.dll:.MenuAniCon
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 cac917711d0e84d412d48737b6fc9ae7 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
@@ -148,6 +149,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 3f32f08a64daf40b09ed864d96fe3840 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
+f07fcc03c3f8300beb1124ff55154d7b Assembly-CSharp.dll:.KeyOfCar
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:DragonBones.UnityCombineMesh
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Decerase
 472182286424b175c0ab826eb3c98d0a Assembly-CSharp.dll:.PressButtonAni
@@ -166,7 +168,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.Spa
 92ec000703f0be398e232421464690d9 Assembly-CSharp.dll:DragonBones.UnityBone
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.EventSwitch
 1459589575cbffe076919498c865de87 Assembly-CSharp.dll:.ChangeAlpha
-9f01f40dd1cbb8a8039f4482e236750d Assembly-CSharp.dll:.ChangeButton
+a331322dcf038f1d3f1a18b54ade118a Assembly-CSharp.dll:.ChangeButton
 1b6b7844e6cf6858267fd458f63a2827 Assembly-CSharp.dll:.CameraManager
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Fade
 e77b87d6e0b00f20ba642b49075401b7 Assembly-CSharp.dll:.ItemInfo

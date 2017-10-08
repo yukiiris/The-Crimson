@@ -18,7 +18,7 @@ public class PuzzleManager : MonoBehaviour {
 		if (rightNum == winNum) {
 			ifPuzzleWin = true;
 			EventButton.buttons[ID] = true;
-			ChangeForWin.flag = true;
+			KeyOfCar.flag = true;
 			
 		}
 	}

@@ -6,6 +6,7 @@ public class ChangeButton : MonoBehaviour {
 
 	public GameObject toLoad;
 	public GameObject toUnload;
+	public Dialog dialog;
 	// Use this for initialization
 	void Start () {
 		
@@ -18,10 +19,11 @@ public class ChangeButton : MonoBehaviour {
 
 	private void OnMouseDown()
 	{
-		print(Black.isActive);
+
 		if (!Black.isActive)
 		{
 			CameraManager.isChanging = true;
+			
 			CameraManager.change(toLoad, toUnload);
 		}
 	}

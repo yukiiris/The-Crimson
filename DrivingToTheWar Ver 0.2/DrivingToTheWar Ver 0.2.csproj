@@ -81,15 +81,16 @@
     <Compile Include="Assets\Scripts\B\Archive\ArchiveManager.cs" />
     <Compile Include="Assets\Scripts\B\Explore\Explore.cs" />
     <Compile Include="Assets\Scripts\B\Interact\BookShelf.cs" />
-    <Compile Include="Assets\Scripts\B\Interact\ChangeForWin.cs" />
     <Compile Include="Assets\Scripts\B\Interact\ChangeScene.cs" />
     <Compile Include="Assets\Scripts\B\Interact\CrossForObject.cs" />
     <Compile Include="Assets\Scripts\B\Interact\CrossForScene.cs" />
     <Compile Include="Assets\Scripts\B\Interact\EventButton.cs" />
     <Compile Include="Assets\Scripts\B\Interact\EventSwitch.cs" />
     <Compile Include="Assets\Scripts\B\Interact\Interact.cs" />
+    <Compile Include="Assets\Scripts\B\Interact\KeyOfCar.cs" />
     <Compile Include="Assets\Scripts\B\Interact\Notebook.cs" />
     <Compile Include="Assets\Scripts\B\Interact\NPC\Cheifeditor.cs" />
+    <Compile Include="Assets\Scripts\B\Interact\RepoterID.cs" />
     <Compile Include="Assets\Scripts\B\Log\LogManager.cs" />
     <Compile Include="Assets\Scripts\B\note.cs" />
     <Compile Include="Assets\Scripts\B\StartMenu\Black.cs" />
