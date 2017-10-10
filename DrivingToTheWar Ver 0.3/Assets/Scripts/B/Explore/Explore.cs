@@ -10,6 +10,7 @@ public class Explore : MonoBehaviour {
 	public string[] words;
 	public float time = 4;
 	public Text text;
+	public bool isNotCycle = false;
 	// Use this for initialization
 	void Start () {
 		manager = GameObject.Find("LogManager").GetComponent<LogManager>();
@@ -31,7 +32,10 @@ public class Explore : MonoBehaviour {
 		string word = words[i];
 		if (i == (words.Length - 1))
 		{
-			i = 0;
+			if (!isNotCycle)
+			{
+				i = 0;
+			}
 		}
 		else
 		{
