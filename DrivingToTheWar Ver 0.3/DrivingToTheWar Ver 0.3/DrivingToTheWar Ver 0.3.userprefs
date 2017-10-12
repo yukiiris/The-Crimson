@@ -1,0 +1,20 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\B\Interact\NPC\Cheifeditor.cs">
+    <Files>
+      <File FileName="Assets\Scripts\L\Func\ChangeLayerandColz.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Camera\CameraManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\B\Interact\ChangeScene.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\L\Coroutine\C_FindReporterID.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\B\Interact\CrossForScene.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\B\Explore\Explore.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\L\New Folder\IfPFFinish.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\B\Interact\NPC\Cheifeditor.cs" Line="37" Column="7" />
+      <File FileName="Assets\Scripts\L\PuzzleFive\PuzzleManager.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

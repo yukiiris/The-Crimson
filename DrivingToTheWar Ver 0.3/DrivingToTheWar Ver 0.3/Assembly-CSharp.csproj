@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{818080D2-F561-2983-C192-F64CAB8817AA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_2;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VIDEO;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\B\Archive\ArchiveManager.cs" />
+     <Compile Include="Assets\Scripts\B\EnableButton.cs" />
+     <Compile Include="Assets\Scripts\B\Explore\Explore.cs" />
+     <Compile Include="Assets\Scripts\B\Interact\BookShelf.cs" />
+     <Compile Include="Assets\Scripts\B\Interact\ChangeScene.cs" />
+     <Compile Include="Assets\Scripts\B\Interact\CrossForObject.cs" />
+     <Compile Include="Assets\Scripts\B\Interact\CrossForScene.cs" />
+     <Compile Include="Assets\Scripts\B\Interact\EventButton.cs" />
+     <Compile Include="Assets\Scripts\B\Interact\EventSwitch.cs" />
+     <Compile Include="Assets\Scripts\B\Interact\Interact.cs" />
+     <Compile Include="Assets\Scripts\B\Interact\KeyOfCar.cs" />
+     <Compile Include="Assets\Scripts\B\Interact\NPC\Cheifeditor.cs" />
+     <Compile Include="Assets\Scripts\B\Interact\Notebook.cs" />
+     <Compile Include="Assets\Scripts\B\Interact\RepoterID.cs" />
+     <Compile Include="Assets\Scripts\B\Interact\WordForGame.cs" />
+     <Compile Include="Assets\Scripts\B\Log\LogManager.cs" />
+     <Compile Include="Assets\Scripts\B\StartMenu\Black.cs" />
+     <Compile Include="Assets\Scripts\B\StartMenu\ContinueButton.cs" />
+     <Compile Include="Assets\Scripts\B\StartMenu\ExitButton.cs" />
+     <Compile Include="Assets\Scripts\B\StartMenu\Fade.cs" />
+     <Compile Include="Assets\Scripts\B\StartMenu\SceneChanger.cs" />
+     <Compile Include="Assets\Scripts\B\StartMenu\SettingsButton.cs" />
+     <Compile Include="Assets\Scripts\B\StartMenu\StartButton.cs" />
+     <Compile Include="Assets\Scripts\B\note.cs" />
+     <Compile Include="Assets\Scripts\Camera\CameraManager.cs" />
+     <Compile Include="Assets\Scripts\Camera\ChangeButton.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\3rdParty\MiniJSON.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\animation\Animation.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\animation\AnimationState.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\animation\BaseTimelineState.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\animation\IAnimateble.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\animation\TimelineState.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\animation\WorldClock.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\armature\Armature.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\armature\Bone.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\armature\IArmatureProxy.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\armature\Slot.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\armature\TransformObject.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\core\BaseObject.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\core\DragonBones.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\core\DragonBonesAniImport.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\event\EventObject.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\event\IEventDispatcher.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\factory\BaseFactory.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\geom\Geom.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\model\AnimationConfig.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\model\AnimationData.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\model\ArmatureData.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\model\DragonBonesData.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\model\FrameData.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\model\TimelineData.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\parser\DataParser.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\parser\ObjectDataParser.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\texture\TextureData.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\unity\UnityArmatureComponent.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\unity\UnityBone.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\unity\UnityCombineMesh.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\unity\UnityDragonBonesData.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\unity\UnityEventDispatcher.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\unity\UnityFactory.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\unity\UnitySlot.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\unity\UnityTextureData.cs" />
+     <Compile Include="Assets\Scripts\DragonBones\unity\UnityUGUIDisplay.cs" />
+     <Compile Include="Assets\Scripts\Item\CollectItem.cs" />
+     <Compile Include="Assets\Scripts\Item\Drag.cs" />
+     <Compile Include="Assets\Scripts\Item\ItemCommon.cs" />
+     <Compile Include="Assets\Scripts\Item\ItemInfo.cs" />
+     <Compile Include="Assets\Scripts\Item\Re.cs" />
+     <Compile Include="Assets\Scripts\Item\UseItem.cs" />
+     <Compile Include="Assets\Scripts\L\Coroutine\C_01Finish.cs" />
+     <Compile Include="Assets\Scripts\L\Coroutine\C_ClearBlocks.cs" />
+     <Compile Include="Assets\Scripts\L\Coroutine\C_FindReporterID.cs" />
+     <Compile Include="Assets\Scripts\L\Coroutine\C_MoveToNotebook.cs" />
+     <Compile Include="Assets\Scripts\L\Coroutine\C_OneWords.cs" />
+     <Compile Include="Assets\Scripts\L\Coroutine\C_PrintWarpass.cs" />
+     <Compile Include="Assets\Scripts\L\Coroutine\C_Tutorial.cs" />
+     <Compile Include="Assets\Scripts\L\Coroutine\C_Tutorial2.cs" />
+     <Compile Include="Assets\Scripts\L\Func\ChangeLayerandColz.cs" />
+     <Compile Include="Assets\Scripts\L\Func\ChangeWords.cs" />
+     <Compile Include="Assets\Scripts\L\Func\LoopWords.cs" />
+     <Compile Include="Assets\Scripts\L\New Folder\If01Finish.cs" />
+     <Compile Include="Assets\Scripts\L\New Folder\IfNoteOn.cs" />
+     <Compile Include="Assets\Scripts\L\New Folder\IfPFFinish.cs" />
+     <Compile Include="Assets\Scripts\L\New Folder\IfPFWin.cs" />
+     <Compile Include="Assets\Scripts\L\New Folder\IfPrint.cs" />
+     <Compile Include="Assets\Scripts\L\PuzzleFive\IntPos.cs" />
+     <Compile Include="Assets\Scripts\L\PuzzleFive\PuzzleManager.cs" />
+     <Compile Include="Assets\Scripts\L\PuzzleFive\RightPos.cs" />
+     <Compile Include="Assets\Scripts\L\PuzzlePosterSafe\SafeButton.cs" />
+     <Compile Include="Assets\Scripts\L\PuzzleSearch\SearchPoint.cs" />
+     <Compile Include="Assets\Scripts\L\PuzzleSearch\SetBooks.cs" />
+     <Compile Include="Assets\Scripts\L\Show\CandleShade.cs" />
+     <Compile Include="Assets\Scripts\L\Show\ChangeAlpha.cs" />
+     <Compile Include="Assets\Scripts\L\Show\floating.cs" />
+     <Compile Include="Assets\Scripts\L\UI\CloseGameobject.cs" />
+     <Compile Include="Assets\Scripts\L\UI\MouseOverAni.cs" />
+     <Compile Include="Assets\Scripts\L\UI\PressButtonAni.cs" />
+     <Compile Include="Assets\Scripts\StateM.cs" />
+     <Compile Include="Assets\Scripts\UI\Dialog Box\Dialog.cs" />
+     <Compile Include="Assets\Scripts\UI\Menu\AudioManager.cs" />
+     <Compile Include="Assets\Scripts\UI\Menu\Decerase.cs" />
+     <Compile Include="Assets\Scripts\UI\Menu\Increase.cs" />
+     <Compile Include="Assets\Scripts\UI\Menu\MenuAniCon.cs" />
+     <Compile Include="Assets\Scripts\UI\Menu\OnMouseTouch.cs" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PlaymodeTestsRunner">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
